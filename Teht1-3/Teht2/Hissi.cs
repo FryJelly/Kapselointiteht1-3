@@ -10,10 +10,20 @@ using System.Threading.Tasks;
 
 namespace Teht2
 {
-    class Program
+    class Hissi
     {
-        static void Main(string[] args)
+        public int elevator;
+        public int Elevator
         {
+            get { return elevator; }
+            set
+            {
+
+                if (value <= 6 && value >= 1)
+                {
+                    value = elevator;
+                }
+            }
         }
     }
 }
