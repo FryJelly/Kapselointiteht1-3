@@ -14,6 +14,11 @@ namespace Teht2
     {
         static void Main(string[] args)
         {
+            Hissi Floor = new Hissi();
+            while (true)
+            {
+            Floor.FloorNumber();
+            }
         }
     }
 }

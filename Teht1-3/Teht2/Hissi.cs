@@ -15,15 +15,42 @@ namespace Teht2
         public int elevator;
         public int Elevator
         {
-            get { return elevator; }
-            set
-            {
+            get;
+            set;
+        }
 
-                if (value <= 6 && value >= 1)
+        public int FloorNumber()
+        {
+            int number;
+            Console.Write("Enter floor number: ");
+            int.TryParse(Console.ReadLine(), out number);
+            if (number <= 5 && number >= 1)
+            {
+                elevator = number;
+                Console.WriteLine("Elevator is now on floor number: " + elevator);
+                
+            }
+            else
+            {
+                if (number >= 6)
                 {
-                    value = elevator;
+                    Console.WriteLine("Too big!");
+                    Console.WriteLine("Elevator is now on floor number: " + elevator);
+                }
+                else
+                {
+                    if (number <= 0)
+                    {
+                        Console.WriteLine("Too small!");
+                        Console.WriteLine("Elevator is now on floor number: " + elevator);
+                    }
+                    else
+                    {
+                    }
                 }
             }
+                    return Elevator;
         }
     }
 }
+
