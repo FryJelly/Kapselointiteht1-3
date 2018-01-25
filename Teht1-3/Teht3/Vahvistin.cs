@@ -23,6 +23,7 @@ namespace Teht3
                 {
                     if (value > 100)
                     {
+                        volume = 100;
                         Console.WriteLine("The volume is too damn high!");
                         Console.WriteLine("The volume is now at: " + volume);
                     }
@@ -30,6 +31,7 @@ namespace Teht3
                     {
                         if (value < 0)
                         {
+                            volume = 0;
                             Console.WriteLine("The volume is too damn low!");
                             Console.WriteLine("The volume is now at: " + volume);
                         }
